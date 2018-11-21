@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.arkadygamza.shakedetector.MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner_gyroscope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/list" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_gyroscope"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Shag" />
+
+
+        <EditText
+            android:id="@+id/value_shag"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="124dp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/shag"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="0dp"
+            android:onClick="onClick"
+            android:text="Применить" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/value_edit"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_x"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/value_edit"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/btn_y"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_x"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/btn_z"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_y"
+            android:text="Z" />
+
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="78dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_z"
+            android:text="all" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_all"
+            android:text="cancel" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
